@@ -7,8 +7,6 @@
 /* Global Reset */
 
 * {
-  margin: 0;
-  padding: 0;
 }
 
 html, body {
@@ -24,11 +22,40 @@ body {
 
 
 h1, h2, h3 {
-  margin-bottom: 1em;
+  max-width: 100%;
+  margin-bottom: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: rgb(55, 53, 47);
+  font-family: "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 3px 2px;
+  line-height: 1.3;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.875em;
+ 
+}
+
+h2 {
+max-width: 100%;
+  font-weight: 400;
+  font-size: 1.35em;
+}
+
+h3 {
+max-width: 100%;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+h5 {
+  margin-bottom: 0em;
 }
 
 p {
-  margin: 1em 0;
+  margin: .5em 0;
 }
 
 a {
@@ -57,10 +84,14 @@ table {
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
+    margin: 0;
+    padding: 0;
 }
 
   ul.posts li {
     line-height: 1.75em;
+    margin: 0;
+    padding: 0;
   }
 
   ul.posts span {
@@ -79,7 +110,8 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 64em;
+  max-width: 64em;
+  width: fit-content;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -172,7 +204,7 @@ ul.posts {
 /*****************************************************************************/
 
 #post {
-
+  max-width: 42em;
 }
 
   /* standard */
@@ -185,7 +217,6 @@ ul.posts {
 
   #post ul,
   #post ol {
-    margin-left: 1.35em;
   }
 
   #post code {
