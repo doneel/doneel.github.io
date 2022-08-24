@@ -233,6 +233,8 @@ ul.posts {
   #post img {
     max-width: 42em;
     padding: 1em 0;
+    margin: 0 auto;
+    display: block;
   }
 
   /* terminal */
