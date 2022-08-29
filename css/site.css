@@ -205,7 +205,16 @@ ul.posts {
 
 #post {
   max-width: 42em;
+  color: rgb(55, 53, 47);
 }
+
+  #post blockquote {
+    border-left: 3px solid currentcolor;
+    padding-left: 1em;
+    margin-left: 1.9em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+  }
 
   /* standard */
 
