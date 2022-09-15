@@ -32,7 +32,9 @@ title: Daniel O'Neel
         <h5>{{ category_name }}</h5>
         <ul class="posts">
           {% for post in site.categories[category_name] %}
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% if post.listed != false %}
+              <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       {% endfor %}

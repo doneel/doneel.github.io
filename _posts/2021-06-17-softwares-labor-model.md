@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What I wish my coworkers knew
+title: Software's labor model
 categories: work
 ---
 
